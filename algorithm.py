@@ -10,5 +10,4 @@ def CEM(IMG):
   IR = np.linalg.inv(R)
   X = (np.dot(IMG1,np.dot(IR,D)))/(np.dot(TD,np.dot(IR,D)))
   result = X.reshape(x,y)
-  print(X.shape)
   return result
